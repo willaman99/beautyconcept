@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Beauty Concept Salon · Altamira</title>
+<meta name="description" content="Salão de beleza feminino em Altamira (PA). Cabelo, unhas e maquiagem. Agende pelo WhatsApp, veja a rota no Maps, Waze ou Urbano Norte e siga no Instagram.">
+<meta name="theme-color" content="#f6f1ea">
+<meta property="og:title" content="Beauty Concept Salon · Altamira">
+<meta property="og:description" content="Cor, corte e finalização. Beleza leve e natural. Tv. das Palmeiras, 33 – Premem, Altamira – PA.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Josefin+Sans:wght@300&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BeautySalon",
+  "name": "Beauty Concept Salon",
+  "telephone": "+55-93-99242-9941",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Travessa das Palmeiras, 33",
+    "addressLocality": "Altamira",
+    "addressRegion": "PA",
+    "postalCode": "68372-650",
+    "addressCountry": "BR"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": -3.210575, "longitude": -52.217375 },
+  "sameAs": ["https://www.instagram.com/beautyconceptsalonn/"]
+}
+</script>
+<style>
+  :root {
+    --bg: #f6f1ea;
+    --card: #fffdf9;
+    --ink: #2a2521;
+    --muted: #7d7268;
+    --gold: #a8844f;
+    --line: #e6dccf;
+    --btn: #2a2521;
+    --btn-ink: #f6f1ea;
+    --cv1: rgba(214,180,140,.55); --cv2: rgba(201,170,130,.35);
+    --cvbg: linear-gradient(180deg, #f4efe9 0%, #ece3d8 55%, #e3d3bf 75%, #efe8df 100%);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #171412;
+      --card: #201c19;
+      --ink: #f1e9df;
+      --muted: #a89c90;
+      --gold: #c9a56e;
+      --line: #3a332d;
+      --btn: #f1e9df;
+      --btn-ink: #171412;
+      --cv1: rgba(150,115,75,.40); --cv2: rgba(120,95,65,.30);
+      --cvbg: linear-gradient(180deg, #1d1916 0%, #241e19 55%, #2b231c 75%, #1a1613 100%);
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    min-height: 100vh;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Montserrat", system-ui, sans-serif;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    padding: 48px 16px calc(32px + env(safe-area-inset-bottom));
+  }
+  main { width: 100%; max-width: 420px; text-align: center; }
+
+  .cover {
+    margin: -48px -16px 0; height: 330px; position: relative;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    background:
+      radial-gradient(60% 45% at 85% 30%, var(--cv1), transparent 70%),
+      radial-gradient(40% 35% at 20% 70%, var(--cv2), transparent 70%),
+      var(--cvbg);
+  }
+  .cover::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 70px; background: linear-gradient(transparent, var(--bg)); }
+  .bc { width: 128px; margin-bottom: 20px; fill: none; stroke: var(--ink); stroke-width: 5.5; stroke-linecap: round; stroke-linejoin: round; position: relative; z-index: 1; }
+  h1 {
+    font-family: "Josefin Sans", sans-serif; font-weight: 300;
+    font-size: 22px; letter-spacing: 5px; text-transform: uppercase; line-height: 1.1; position: relative; z-index: 1;
+  }
+  .sub {
+    margin-top: 10px; font-family: "Josefin Sans", sans-serif; font-size: 10.5px; letter-spacing: 9px; text-transform: uppercase; color: var(--muted); position: relative; z-index: 1;
+  }
+  .tagline {
+    margin: 6px auto 0; max-width: 300px;
+    font-family: "Cormorant Garamond", serif; font-style: italic; font-size: 19px; color: var(--muted);
+  }
+  .rule { width: 40px; height: 1px; background: var(--gold); margin: 30px auto; border: 0; }
+
+  nav { display: grid; gap: 12px; }
+  .btn {
+    display: flex; align-items: center; gap: 14px;
+    padding: 16px 20px; border-radius: 14px;
+    border: 1px solid var(--line); background: var(--card); color: var(--ink);
+    text-decoration: none; font-size: 14px; font-weight: 400; letter-spacing: .4px;
+    transition: transform .15s ease, border-color .15s ease;
+  }
+  .btn:hover { border-color: var(--gold); }
+  .btn:active { transform: scale(.98); }
+  .btn svg { width: 22px; height: 22px; flex: none; stroke: var(--gold); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+  .btn span { flex: 1; text-align: left; }
+  .btn small { display: block; font-size: 11.5px; color: var(--muted); font-weight: 300; margin-top: 2px; }
+  .btn.primary { background: var(--btn); color: var(--btn-ink); border-color: var(--btn); }
+  .btn.primary small { color: inherit; opacity: .7; }
+  .btn.primary svg { stroke: var(--btn-ink); }
+
+  .label {
+    margin: 26px 0 12px; font-size: 10.5px; letter-spacing: 4px; text-transform: uppercase; color: var(--muted);
+  }
+  .duo { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .duo .btn { justify-content: center; flex-direction: column; gap: 8px; padding: 18px 10px; }
+  .duo .btn span { text-align: center; flex: none; }
+
+  .services {
+    margin-top: 34px; font-size: 12.5px; line-height: 2; color: var(--muted);
+  }
+  .services b { color: var(--ink); font-weight: 400; }
+  address {
+    margin-top: 26px; font-style: normal; font-size: 12.5px; line-height: 1.7; color: var(--muted);
+  }
+  .toast { position: fixed; left: 50%; bottom: calc(24px + env(safe-area-inset-bottom)); transform: translateX(-50%) translateY(20px);
+    background: var(--btn); color: var(--btn-ink); font-size: 12.5px; padding: 12px 18px; border-radius: 12px;
+    opacity: 0; transition: opacity .2s, transform .2s; pointer-events: none; width: max-content; max-width: 90vw; }
+  .toast.on { opacity: 1; transform: translateX(-50%) translateY(0); }
+  footer { margin-top: 30px; font-size: 10.5px; letter-spacing: 3px; text-transform: uppercase; color: var(--muted); opacity: .7; }
+</style>
+</head>
+<body>
+<main>
+  <header class="cover">
+    <svg class="bc" viewBox="0 0 420 370" aria-hidden="true">
+      <path d="M20 15 V355 M20 355 H150"/>
+      <path d="M20 15 H125 C 205 15 210 160 110 165"/>
+      <path d="M110 165 C 235 160 262 275 232 318 C 212 348 185 355 150 355"/>
+      <path d="M150 52 Q 8 187 150 322"/>
+      <path d="M232 18 A 170 170 0 0 1 405 150"/>
+      <path d="M405 238 A 170 170 0 0 1 232 352"/>
+    </svg>
+    <h1>Beauty Concept</h1>
+    <p class="sub">· Salon ·</p>
+  </header>
+  <p class="tagline">Cor, corte e finalização. Beleza leve e natural.</p>
+  <hr class="rule">
+
+  <nav aria-label="Contato">
+    <a class="btn primary" href="https://wa.me/5593992429941?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.4z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1.2-1.6-2.2-1-1 .9a5 5 0 0 1-2.8-2.8l.9-1-1-2.2z"/></svg>
+      <span>Agendar pelo WhatsApp<small>(93) 99242-9941</small></span>
+    </a>
+    <a class="btn" href="tel:+5593992429941">
+      <svg viewBox="0 0 24 24"><path d="M5 3.5h3.5l1.5 4.5-2.2 1.4a11 11 0 0 0 6.8 6.8l1.4-2.2 4.5 1.5V19a2 2 0 0 1-2 2A16.5 16.5 0 0 1 3 5.5a2 2 0 0 1 2-2z"/></svg>
+      <span>Ligar para o salão<small>(93) 99242-9941</small></span>
+    </a>
+    <a class="btn" href="https://www.instagram.com/beautyconceptsalonn/" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6"/></svg>
+      <span>Instagram<small>@beautyconceptsalonn</small></span>
+    </a>
+  </nav>
+
+  <p class="label">Como chegar</p>
+  <div class="duo">
+    <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=-3.210575,-52.217375" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0 1 13 0c0 5-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>
+      <span>Google Maps</span>
+    </a>
+    <a class="btn" href="https://waze.com/ul?ll=-3.210575,-52.217375&amp;navigate=yes" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M4.5 15.5A8 8 0 1 1 20 12c0 3-2 5-5 5.5H10a5 5 0 0 1-5.5-2z"/><circle cx="9" cy="10.5" r=".6"/><circle cx="14.5" cy="10.5" r=".6"/><path d="M9.5 13.5a3 3 0 0 0 4.5 0"/><circle cx="8" cy="19" r="1.5"/><circle cx="16" cy="19" r="1.5"/></svg>
+      <span>Waze</span>
+    </a>
+    <a class="btn" id="urbano" href="https://play.google.com/store/apps/details?id=br.com.urbanonorte.passenger.drivermachine" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M5 16V11l2-4.5h10L19 11v5"/><path d="M4 16h16v2.5H4z"/><circle cx="8" cy="13.5" r=".6"/><circle cx="16" cy="13.5" r=".6"/></svg>
+      <span>Urbano Norte</span>
+    </a>
+    <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=-3.210575,-52.217375" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M9 4 3.5 6v14L9 18l6 2 5.5-2V4L15 6z"/><path d="M9 4v14M15 6v14"/></svg>
+      <span>Ver no mapa</span>
+    </a>
+  </div>
+
+  <p class="services">
+    <b>Cabelo</b> · escova · hidratação · tratamentos<br>
+    progressiva · química · reflexos · pigmentação · coloração<br>
+    <b>Unhas</b> · manicure · pedicure<br>
+    <b>Maquiagem</b> · produção para festas e eventos
+  </p>
+
+  <address>
+    Tv. das Palmeiras, 33 – Premem<br>
+    esquina com a Alameda Polivalente<br>
+    Altamira – PA · 68372-650
+  </address>
+
+  <footer>Beauty Concept Salon</footer>
+</main>
+<div class="toast" id="toast" role="status">Endereço copiado. No app, cole no destino.</div>
+<script>
+  // Urbano Norte não aceita destino por link: copia o endereço e abre o app pela loja (que mostra "Abrir" se já instalado)
+  document.getElementById("urbano").addEventListener("click", function () {
+    if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) this.href = "https://apps.apple.com/br/app/id1244757393";
+    try { navigator.clipboard.writeText("Travessa das Palmeiras, 33, Premem, Altamira - PA"); } catch (e) {}
+    var t = document.getElementById("toast"); t.classList.add("on");
+    setTimeout(function () { t.classList.remove("on"); }, 3500);
+  });
+</script>
+</body>
+</html>
